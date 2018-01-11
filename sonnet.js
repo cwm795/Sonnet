@@ -11,15 +11,15 @@ function sonnetIndex() {
     console.log(index,"index");
 }
 
-function sonnetReplace() {
+
+function sonnetReplaceAll() {
     var replace = sonnetDiv.replace("winter", "yuletide");
-    console.log(replace, "replace");
+    var replaceThe = replace.replace(/the/g, "a large");
+    var newString = `<p>${replaceThe}</p>`;
+    console.log(replaceThe);
 }
 
 
-
-
-
-sonnetReplace();
+sonnetReplaceAll();
 sonnetIndex();
 sonnetLength();
