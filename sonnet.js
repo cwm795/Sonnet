@@ -14,9 +14,8 @@ function sonnetIndex() {
 
 function sonnetReplaceAll() {
     var replace = sonnetDiv.replace("winter", "yuletide");
-    var replaceThe = replace.replace(/the/g, "a large");
-    var newString = `<p>${replaceThe}</p>`;
-    console.log(replaceThe);
+    var replaceThe = replace.replace(/the/g,"a large");
+    var newString = document.getElementById("sonnet").innerHTML = `<p>${replaceThe}</p>`;
 }
 
 
